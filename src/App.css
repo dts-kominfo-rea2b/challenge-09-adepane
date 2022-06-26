@@ -1,4 +1,74 @@
 .App {
-  text-align: center;
   display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1e8db;
+}
+
+.App .header {
+  border-bottom: 4px dotted #b32889;
+  width: 50%;
+}
+
+.App .title {
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.App .tagline {
+  padding: 20px 0;
+  
+}
+
+.App .contact-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 30%;
+  padding: 30px;
+}
+
+.App .contact-item {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  padding: 25px;
+  background-color: #e1c7a1;
+  border-radius: 20px;
+}
+
+.App .contact-picture img {
+  width: 100px;
+  border-radius: 100%;
+  flex-grow: 1;
+}
+
+.App .contact-desc {
+  flex-grow: 3;
+}
+
+.App .contact-name, .App .contact-phone, .App .contact-email {
+  margin: 10px 0;
+}
+
+.App .contact-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 513px) {
+  .App .header {
+    width: 100%;
+  }
+
+  .App .contact-list {
+    width: 90%;
+    padding: 30px 0;
+  }
+  .App .contact-item {
+    width: 85%;
+  }
 }
